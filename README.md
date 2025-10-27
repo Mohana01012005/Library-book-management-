@@ -128,15 +128,15 @@ The data should be updated automatically (e.g., book status changes to “Issued
                                          9.Common Issues and Solutions
                                          
         Issue	                         Cause                           	  Solution
-Server not starting             	     Missing modules	                       Install required packages (express, mysql2, cors, body-parser)
+Server not starting            - 	     Missing modules	             -          Install required packages (express, mysql2, cors, body-parser)
 
-“Cannot connect to database”    	     Wrong credentials in db.js	             Check MySQL username, password, and database name
+“Cannot connect to database”   - 	     Wrong credentials in db.js	      -       Check MySQL username, password, and database name
 
-CORS error                    	       Browser blocked request                	Use app.use(cors()) in backend
+CORS error                    	-       Browser blocked request       -         	Use app.use(cors()) in backend
 
-Fetch API not working                 	Wrong API URL                          	Make sure the backend port matches (usually http://localhost:5000)
+Fetch API not working           -      	Wrong API URL                  -        	Make sure the backend port matches (usually http://localhost:5000)
 
-Login not working               	      Wrong admin record	                    Verify username and password in admins table    
+Login not working               -	      Wrong admin record	             -       Verify username and password in admins table    
 
                                              10.Summary
 
