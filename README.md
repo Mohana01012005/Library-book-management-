@@ -1,5 +1,6 @@
 # Library-book-management-
 Instructions to Run the Library Book Management System
+
                                   1. Project Overview
 
 The Library Book Management System is a web-based application designed to handle common library operations such as adding books, issuing and returning books, and generating reports.
@@ -123,13 +124,16 @@ All these operations interact with the database in real time through the backend
 After performing operations (add, issue, return), check your MySQL database tables.
 
 The data should be updated automatically (e.g., book status changes to “Issued” or “Available”).
+
                                          9.Common Issues and Solutions
+                                         
         Issue	                         Cause                           	Solution
 Server not starting             	Missing modules	                 Install required packages (express, mysql2, cors, body-parser)
 “Cannot connect to database”    	Wrong credentials in db.js	     Check MySQL username, password, and database name
 CORS error                    	  Browser blocked request         	Use app.use(cors()) in backend
 Fetch API not working            	Wrong API URL                    	Make sure the backend port matches (usually http://localhost:5000)
-Login not working               	Wrong admin record	              Verify username and password in admins table                                                                                                                                          
+Login not working               	Wrong admin record	              Verify username and password in admins table    
+
                                              10.Summary
 
 The backend (Node.js + MySQL) handles data and logic.
